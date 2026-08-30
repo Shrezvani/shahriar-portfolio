@@ -919,8 +919,8 @@ export const POSTS = [
   "title": "What Saadi Teaches Leaders About Legacy",
   "tag": "Leadership",
   "href": "https://shahriar.me/f/what-saadi-teaches-leaders-about-legacy",
-  "summary": "enturies before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.",
-  "standfirst": "enturies before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.",
+  "summary": "Centuries before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.",
+  "standfirst": "Centuries before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.",
   "blocks": [
    {
     "t": "p",
@@ -2617,8 +2617,8 @@ export const POSTS = [
   "title": "Shifting Gears: Embracing Challenges and Opportunities in Mobility",
   "tag": "Mobility",
   "href": "",
-  "summary": "",
-  "standfirst": "",
+  "summary": "The automotive and mobility space is evolving faster than ever, presenting both formidable challenges and extraordinary opportunities.",
+  "standfirst": "The automotive and mobility space is evolving faster than ever, presenting both formidable challenges and extraordinary opportunities.",
   "blocks": [
    {
     "t": "p",
