@@ -81,6 +81,9 @@
     .g-awards { grid-template-columns: repeat(2, 1fr) !important; }
     .g-profile, .g-insights { grid-template-columns: 1fr !important; }
     .g-reader { grid-template-columns: 1fr !important; }
+    .g-how { grid-template-columns: 1fr !important; }
+    .g-how > * { padding-left: 0 !important; padding-right: 0 !important; border-left: 0 !important; border-top: 2px solid var(--color-divider) !important; padding-bottom: var(--space-8) !important; }
+    .g-how > *:first-child { border-top: 0 !important; }
     .g-hero, .g-record, .g-contact { grid-template-columns: 1fr !important; gap: 0 !important; }
     .g-hero > div:first-child, .g-record > div:first-child { padding-right: 0 !important; }
     .g-hero > .grayscale { border-left: 0 !important; border-top: 2px solid var(--color-text) !important; min-height: 0 !important; height: 440px !important; }
@@ -97,7 +100,11 @@
     .g-awards > *:not(:last-child) { border-bottom: 0 !important; }
     .g-awards > *:nth-child(1), .g-awards > *:nth-child(2) { border-bottom: 2px solid var(--color-text) !important; }
   }
+  @media (max-width: 900px) {
+    .g-insights-head > div:last-child { margin-left: 0 !important; width: 100% !important; margin-top: var(--space-4) !important; }
+  }
   @media (max-width: 720px) {
+    .g-role { grid-template-columns: 1fr !important; gap: 4px !important; }
     .g-proof { grid-template-columns: 1fr !important; }
     .g-awards { grid-template-columns: 1fr !important; }
     .g-proof > *, .g-awards > * { border-left: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
@@ -110,7 +117,7 @@
     #contact { margin-top: 56px !important; }
   }
   @media (max-width: 520px) {
-    .g-navbar, #top > div, #profile, #advisory, #insights, #record, #contact > div, footer > div { padding-left: var(--space-4) !important; padding-right: var(--space-4) !important; }
+    .g-navbar, #top > div, #profile, #advisory, #insights, #record, #how, #contact > div, footer > div { padding-left: var(--space-4) !important; padding-right: var(--space-4) !important; }
   }
 </style>
 </helmet>
@@ -125,6 +132,7 @@
         <a href="#insights" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Insights</a>
         <a href="#record" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Track Record</a>
         <a href="#engagement" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Work</a>
+        <a href="#how" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">How I Work</a>
         <a href="#awards" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Awards</a>
         <a href="#contact" style="background: var(--color-accent); color: #fff; padding: 10px var(--space-4); font-weight: 700;" style-hover="background: var(--color-accent-600); color: #fff;">Contact</a>
       </nav>
@@ -215,9 +223,14 @@
 
   <sc-if value="{{ showInsights }}" hint-placeholder-val="{{ true }}">
     <section id="insights" style="max-width: 1440px; margin: 0 auto; padding: 0 var(--space-8);">
-      <div style="display: flex; align-items: baseline; gap: var(--space-6); padding: 72px 0 var(--space-8);">
+      <div class="g-insights-head" style="display: flex; align-items: baseline; gap: var(--space-6); padding: 72px 0 var(--space-8); flex-wrap: wrap;">
         <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700);">03</span>
         <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(28px, 3vw, 44px); letter-spacing: -0.02em; text-transform: uppercase;">Insights</h2>
+        <div style="display: flex; gap: 0; flex-wrap: wrap; margin-left: auto;">
+          <sc-for list="{{ filters }}" as="f" hint-placeholder-count="8">
+            <button type="button" onClick="{{ f.select }}" style="{{ f.style }}" style-hover="background: var(--color-accent-100);">{{ f.label }}</button>
+          </sc-for>
+        </div>
       </div>
       <div class="stack g-insights" style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--color-text); border-bottom: 2px solid var(--color-text);">
         <sc-for list="{{ posts }}" as="p" hint-placeholder-count="12">
@@ -287,10 +300,11 @@
       <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(28px, 3vw, 44px); letter-spacing: -0.02em; text-transform: uppercase;">Track Record</h2>
     </div>
     <div class="stack g-record" style="display: grid; grid-template-columns: 1.5fr 1fr; border-top: 2px solid var(--color-text); border-bottom: 2px solid var(--color-text);">
-      <div style="padding: var(--space-8) var(--space-8) 56px 0; display: flex; flex-direction: column; gap: var(--space-6);">
+      <div style="padding: var(--space-8) var(--space-8) 56px 0; display: flex; flex-direction: column; gap: var(--space-6); text-align: justify; text-justify: inter-word; hyphens: auto;">
         <p style="margin: 0; font-size: 17px; line-height: 1.6; text-wrap: pretty;">With over 15 years of executive leadership across mobility, transport, and asset-intensive businesses, I have led multi-country operations, managed AED 1B+ asset portfolios, and delivered large-scale transformation across the GCC. My experience spans corporate leadership, investor advisory, public-private stakeholder engagement, and strategic execution across complex operating environments where performance, speed, and decision quality are critical.</p>
         <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">I have worked closely with senior executives, investors, founders, and government stakeholders on growth strategy, operating model design, cost transformation, fleet optimization, market expansion, and business scalability. My background combines hands-on operational leadership with strategic advisory, allowing me to bridge the gap between high-level vision and practical execution.</p>
         <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">As Vice President of Columbia Business School UAE Chapter and an advisor to GLG and AlphaSights, I support organizations in navigating high-value strategic challenges with clarity, commercial discipline, and measurable outcomes.</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">I hold an MBA in International Business and a BSc in Industrial Engineering, with executive programmes in General Management and Digital Marketing from Columbia Business School, Six Sigma Green Belt certification, and corporate risk management training from Ernst &amp; Young.</p>
       </div>
       <div style="padding: var(--space-8) 0 56px var(--space-8); border-left: 2px solid var(--color-divider);">
         <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">Credentials &amp; Affiliations</div>
@@ -301,6 +315,19 @@
             <sc-if value="{{ c.hasHref }}" hint-placeholder-val="{{ true }}">
               <a href="{{ c.href }}" target="_blank" rel="noopener" style="margin-top: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);" style-hover="color: var(--color-accent-600);">Chapter leadership →</a>
             </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="padding: 56px 0 0;">
+      <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">Career</div>
+      <div style="border-top: 2px solid var(--color-text);">
+        <sc-for list="{{ roles }}" as="r" hint-placeholder-count="8">
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">{{ r.years }}</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">{{ r.org }}</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">{{ r.role }}</span>
           </div>
         </sc-for>
       </div>
@@ -360,6 +387,46 @@
           <img src="uploads/dast-2013.jpg" alt="Al Otaiba General Transport receiving the DAST award" style="display: block; width: 100%; height: 240px; object-fit: cover; object-position: center 42%;">
           <span style="position: absolute; left: 0; bottom: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; background: var(--color-bg); color: var(--color-text); padding: 6px var(--space-3); border-top: 2px solid var(--color-text); border-right: 2px solid var(--color-text);">2013</span>
         </div>
+    </div>
+  </section>
+
+  <section id="how" style="max-width: 1440px; margin: 0 auto; padding: 0 var(--space-8);">
+    <div style="display: flex; align-items: baseline; gap: var(--space-6); padding: 72px 0 var(--space-8);">
+      <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700);">07</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(28px, 3vw, 44px); letter-spacing: -0.02em; text-transform: uppercase;">How I Work</h2>
+    </div>
+    <div class="stack g-how" style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--color-text); border-bottom: 2px solid var(--color-text);">
+      <sc-for list="{{ formats }}" as="f" hint-placeholder-count="3">
+        <div style="{{ f.cellStyle }}">
+          <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--color-accent-700);">{{ f.no }}</span>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: 21px; line-height: 1.15; letter-spacing: -0.015em; text-wrap: pretty;">{{ f.title }}</h3>
+          <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--color-neutral-700);">{{ f.shape }}</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty;">{{ f.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div class="stack g-record" style="display: grid; grid-template-columns: 1.5fr 1fr; border-bottom: 2px solid var(--color-text);">
+      <div style="padding: var(--space-8) var(--space-8) 56px 0;">
+        <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">The first conversation</div>
+        <p style="margin: 0 0 var(--space-6); font-size: 17px; line-height: 1.6; max-width: 62ch; text-wrap: pretty;">Every engagement starts with a short, no-obligation call. It is a working conversation, not a pitch — by the end you should know whether I am the right person for the problem, and if so, what a scope would look like.</p>
+        <div style="border-top: 2px solid var(--color-divider);">
+          <sc-for list="{{ firstCall }}" as="q" hint-placeholder-count="4">
+            <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; color: var(--color-neutral-700);">{{ q.no }}</span>
+              <span style="font-size: 15px; line-height: 1.55;">{{ q.text }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="padding: var(--space-8) 0 56px var(--space-8); border-left: 2px solid var(--color-divider);">
+        <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">Principles</div>
+        <sc-for list="{{ principles }}" as="p" hint-placeholder-count="4">
+          <div style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">{{ p.name }}</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">{{ p.note }}</span>
+          </div>
+        </sc-for>
+      </div>
     </div>
   </section>
 
@@ -481,7 +548,29 @@ class Component extends DCLogic {
       showAvailability: this.props.showAvailability ?? true,
       linkedinUrl: this.props.linkedinUrl ?? "https://www.linkedin.com/in/shahriar-rezvani-b1514921/",
       showInsights: this.props.showInsights ?? true,
-      posts: this.postData.map(function (p, i) {
+      filters: (function () {
+        var seen = [];
+        self.postData.forEach(function (p) { if (p.tag && seen.indexOf(p.tag) === -1) seen.push(p.tag); });
+        seen.sort();
+        var active = self.state.activeTag || "All";
+        return ["All"].concat(seen).map(function (t) {
+          var on = t === active;
+          return {
+            label: t,
+            style: "appearance: none; cursor: pointer; font-family: var(--font-heading); font-weight: 700; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; padding: 9px var(--space-4); border: 2px solid var(--color-text); border-right-width: 0; background: " + (on ? "var(--color-text)" : "transparent") + "; color: " + (on ? "var(--color-bg)" : "var(--color-text)") + ";",
+            select: function () { self.setState({ activeTag: t === "All" ? null : t }); }
+          };
+        }).map(function (f, i, arr) {
+          if (i === arr.length - 1) f.style += " border-right-width: 2px;";
+          return f;
+        });
+      })(),
+      posts: this.postData.map(function (p, orig) {
+        return { p: p, orig: orig };
+      }).filter(function (e) {
+        return !self.state.activeTag || e.p.tag === self.state.activeTag;
+      }).map(function (e, i) {
+        var p = e.p, orig = e.orig;
         var col = i % 3;
         var pad = col === 0 ? "var(--space-8) var(--space-6) var(--space-8) 0"
                 : col === 1 ? "var(--space-8) var(--space-6)"
@@ -490,7 +579,7 @@ class Component extends DCLogic {
         if (col !== 0) s += " border-left: 2px solid var(--color-divider);";
         if (i >= 3) s += " border-top: 2px solid var(--color-divider);";
         return { href: p.href || "#insights", tag: p.tag, title: p.title, summary: p.summary, hasSummary: !!p.summary, cellStyle: s + " cursor: pointer;",
-          open: function (e) { e.preventDefault(); self.setState({ openIndex: i }); window.scrollTo(0, window.scrollY); } };
+          open: function (ev) { ev.preventDefault(); self.setState({ openIndex: orig }); window.scrollTo(0, window.scrollY); } };
       }),
       services: [
         { no: "01", title: "Strategic Advisory", body: "I work with business leaders, investors, and senior executives to turn strategy into measurable execution. This includes growth strategy, operating model design, transformation roadmaps, performance improvement, and scale-up planning across complex and asset-intensive businesses." },
@@ -498,6 +587,43 @@ class Component extends DCLogic {
         { no: "03", title: "Market Entry & GCC Expansion", body: "I advise international companies, founders, and investors entering the GCC market on strategic setup, local market positioning, and execution planning — navigating regulatory frameworks, stakeholder engagement, partnership strategy, and operating model design." },
         { no: "04", title: "Leadership Advisory", body: "Senior-level support to business leaders facing complex and high-impact challenges. This includes diagnosing issues, structuring decisions, and working through critical situations where clarity, experience, and sound judgment are required to move forward with confidence." },
         { no: "05", title: "Investor & Board Advisory", body: "I work with investors, boards, and senior decision-makers on strategic reviews, due diligence, operational assessments, and transformation opportunities — supporting investment decisions, turnaround strategies, business scaling, and leadership alignment." }
+      ],
+      formats: [
+        { no: "01", title: "Strategic Diagnostic", shape: "Four to six weeks", body: "A focused review of a defined problem — growth, cost, operating model, or fleet performance. Interviews, data review, and a written set of findings with prioritised recommendations and an execution sequence." },
+        { no: "02", title: "Retained Advisory", shape: "Ongoing, monthly", body: "A standing relationship with a CEO, board, or leadership team. Regular sessions on live decisions, plus availability between them. Suited to organisations in transformation or entering the GCC market." },
+        { no: "03", title: "Expert Consultation", shape: "Single sessions", body: "One-off calls for investors, funds, and corporates needing sector insight on automotive, mobility, transport, leasing, or fleet in the GCC. Available directly or through GLG and AlphaSights." }
+      ].map(function (f, i) {
+        var pad = i === 0 ? "var(--space-8) var(--space-6) 56px 0"
+                : i === 1 ? "var(--space-8) var(--space-6) 56px"
+                : "var(--space-8) 0 56px var(--space-6)";
+        var s = "display: flex; flex-direction: column; gap: var(--space-3); padding: " + pad + ";";
+        if (i !== 0) s += " border-left: 2px solid var(--color-divider);";
+        f.cellStyle = s;
+        return f;
+      }),
+      firstCall: [
+        { no: "01", text: "The decision or problem in front of you, and what has already been tried." },
+        { no: "02", text: "Where the real constraint sits — strategy, operating model, capability, or stakeholder alignment." },
+        { no: "03", text: "Whether my experience is genuinely relevant, or whether someone else is the better fit." },
+        { no: "04", text: "If it is a fit: the shape of an engagement, what it would produce, and over what period." }
+      ],
+      principles: [
+        { name: "Findings, not decks", note: "Written recommendations you can act on, sized to the decision rather than the budget." },
+        { name: "Operator's view", note: "Every recommendation is tested against whether it can actually be executed by the team you have." },
+        { name: "Direct engagement", note: "You work with me. No leverage model, no rotating juniors." },
+        { name: "Confidentiality", note: "Client work is not published or named without explicit permission." }
+      ],
+      roles: [
+        { years: "2021 — present", org: "Al-Futtaim Financial Services, Hertz & MOOV by AF", role: "General Manager — Fleet, Mobility & Logistics" },
+        { years: "2011 — present", org: "Eva Elite Consulting", role: "Managing Director" },
+        { years: "2010 — present", org: "Columbia Business School UAE Chapter", role: "Vice President" },
+        { years: "2018 — 2021", org: "Houst (formerly Airsorted)", role: "General Manager / Partner, Dubai" },
+        { years: "2017 — 2018", org: "Avis Rent a Car", role: "General Manager — Rental & Leasing" },
+        { years: "2016 — 2017", org: "Avis Service Center", role: "General Manager — Fleet Maintenance" },
+        { years: "2011 — 2018", org: "Avis Rent a Car", role: "General Manager — Passenger Transport & Fleet/Mobility Solutions" },
+        { years: "2009 — 2011", org: "Avis Rent a Car", role: "Operations Manager" },
+        { years: "2005 — 2009", org: "Renault–Nissan", role: "Production Scheduling & Launching Manager" },
+        { years: "2004 — 2005", org: "Maersk Line", role: "Logistics Supervisor" }
       ],
       credentials: [
         { name: "DAST Awards — four-time winner", note: "Dubai Award for Sustainable Transport, under the patronage of HH Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum — Transportation Safety, Mobility Management, Environmental Protection" },
