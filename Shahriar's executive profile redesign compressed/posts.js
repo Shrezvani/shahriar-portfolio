@@ -1,6 +1,7 @@
 export const POSTS = [
  {
   "title": "Why the Right Hire Matters More Than Any Strategy",
+  "date": "18 June 2026",
   "tag": "People & Talent",
   "href": "https://shahriar.me/f/why-the-right-hire-matters-more-than-any-strategy",
   "summary": "Organizations often attribute underperformance to strategy, market conditions, or execution challenges.",
@@ -399,6 +400,7 @@ export const POSTS = [
  },
  {
   "title": "Talent Isn’t Enough: Why the “Right” People Matter More",
+  "date": "2 May 2026",
   "tag": "People & Talent",
   "href": "https://shahriar.me/f/talent-isn%E2%80%99t-enough-why-the-%E2%80%9Cright%E2%80%9D-people-matter-more",
   "summary": "Organizations invest heavily in talent. Hiring strategies, leadership pipelines, performance management systems, and succession plans occupy a central place in executive agendas.",
@@ -573,6 +575,7 @@ export const POSTS = [
  },
  {
   "title": "Most Strategy Problems Are Actually People Problems",
+  "date": "14 April 2026",
   "tag": "People & Talent",
   "href": "https://shahriar.me/f/most-strategy-problems-are-actually-people-problems",
   "summary": "Lessons from Leading a Top-Tier Organization Through Record Performance",
@@ -815,6 +818,7 @@ export const POSTS = [
  },
  {
   "title": "Rethinking Transport & Mobility in a World of Complexity",
+  "date": "9 March 2026",
   "tag": "Mobility",
   "href": "https://shahriar.me/f/rethinking-transport-mobility-in-a-world-of-complexity",
   "summary": "Transport and mobility are no longer simply about moving people and goods from point A to point B.",
@@ -917,6 +921,7 @@ export const POSTS = [
  },
  {
   "title": "What Saadi Teaches Leaders About Legacy",
+  "date": "21 February 2026",
   "tag": "Leadership",
   "href": "https://shahriar.me/f/what-saadi-teaches-leaders-about-legacy",
   "summary": "Centuries before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.",
@@ -1151,6 +1156,7 @@ export const POSTS = [
  },
  {
   "title": "Belonging Isn't HR's Job — It's the CEO's",
+  "date": "30 January 2026",
   "tag": "People & Talent",
   "href": "https://shahriar.me/f/belonging-isnt-hrs-job-%E2%80%94-its-the-ceos",
   "summary": "Why the most underinvested lever in strategy execution sits at the top of the organization",
@@ -1233,6 +1239,7 @@ export const POSTS = [
  },
  {
   "title": "Why Smart Leaders Keep Making the Same Strategy Mistake",
+  "date": "12 December 2025",
   "tag": "Strategy",
   "href": "https://shahriar.me/f/why-smart-leaders-keep-making-the-same-strategy-mistake",
   "summary": "The knowing-doing gap is real — and more costly than most executives admit",
@@ -1423,6 +1430,7 @@ export const POSTS = [
  },
  {
   "title": "Still Running a 2010 Playbook? Your Customers Have Already Left.",
+  "date": "6 November 2025",
   "tag": "Transformation",
   "href": "https://shahriar.me/f/still-running-a-2010-playbook-your-customers-have-already-left",
   "summary": "Customer behaviour has changed permanently. Most transformation strategies haven't caught up.",
@@ -1529,6 +1537,7 @@ export const POSTS = [
  },
  {
   "title": "Rethinking What 'Alignment' Actually Means in 2026",
+  "date": "23 October 2025",
   "tag": "Leadership",
   "href": "https://shahriar.me/f/rethinking-what-alignment-actually-means-in-2026",
   "summary": "The concept hasn't changed. The conditions under which leaders must achieve it have.",
@@ -1623,6 +1632,7 @@ export const POSTS = [
  },
  {
   "title": "What the Car Rental Business Taught Me That Business School Didn't",
+  "date": "4 September 2025",
   "tag": "Mobility",
   "href": "https://shahriar.me/f/what-the-car-rental-business-taught-me-that-business-school-didn",
   "summary": "On the gap between strategic frameworks and the reality of leading at scale",
@@ -1705,6 +1715,7 @@ export const POSTS = [
  },
  {
   "title": "Maximizing Growth in the Mobility and Automotive Industry",
+  "date": "19 July 2025",
   "tag": "Growth",
   "href": "https://shahriar.me/f/maximizing-growth-in-the-mobility-and-automotive-industry-1",
   "summary": "Igniting the Future of Mobility and Automotive Growth",
@@ -1883,6 +1894,7 @@ export const POSTS = [
  },
  {
   "title": "AI Will Change How Organizations Work — But People Decide Whether It Works",
+  "date": "28 May 2025",
   "tag": "Technology",
   "href": "",
   "summary": "Artificial intelligence is rapidly reshaping organizational life.",
@@ -2061,6 +2073,7 @@ export const POSTS = [
  },
  {
   "title": "Leadership in Islam: An Ethical Framework for Modern Leadership",
+  "date": "11 March 2025",
   "tag": "Leadership",
   "href": "",
   "summary": "In today’s business and political landscape, leadership is often defined by speed, decisiveness, and results.",
@@ -2231,6 +2244,7 @@ export const POSTS = [
  },
  {
   "title": "Enhancing Your Automotive Business in a Competitive Market",
+  "date": "17 January 2025",
   "tag": "Growth",
   "href": "",
   "summary": "Driving the Shift in Automotive Growth",
@@ -2421,6 +2435,7 @@ export const POSTS = [
  },
  {
   "title": "Top Strategies for Sustainable Growth in the Automotive Sector",
+  "date": "8 October 2024",
   "tag": "Sustainability",
   "href": "",
   "summary": "Accelerating Toward a Greener Automotive Future",
@@ -2615,6 +2630,7 @@ export const POSTS = [
  },
  {
   "title": "Shifting Gears: Embracing Challenges and Opportunities in Mobility",
+  "date": "26 June 2024",
   "tag": "Mobility",
   "href": "",
   "summary": "The automotive and mobility space is evolving faster than ever, presenting both formidable challenges and extraordinary opportunities.",
