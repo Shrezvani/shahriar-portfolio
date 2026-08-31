@@ -3,11 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>Shahriar Rezvani — Strategic Advisor | Mobility, Transport &amp; Business Transformation</title>
 <meta name="description" content="Strategic advisor to leadership teams, investors and public-sector stakeholders across mobility, transport and asset-intensive businesses. 15+ years in the UAE and wider GCC. Four-time DAST award winner.">
 <meta property="og:type" content="website">
@@ -72,6 +67,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="_ds/modernist-d014aa12-caa7-4812-a6af-37fb9b50e1ba/styles.css">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <script src="_ds/modernist-d014aa12-caa7-4812-a6af-37fb9b50e1ba/_ds_bundle.js"></script>
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#f3f2f2"/><rect x="30" y="44" width="40" height="4" fill="#ec3013"/><text x="30" y="40" font-family="Archivo, sans-serif" font-size="22" font-weight="900" fill="#201e1d">SR</text></svg></template>
 <style>
@@ -228,13 +228,35 @@
       <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(28px, 3vw, 44px); letter-spacing: -0.02em; text-transform: uppercase;">Advisory Practice</h2>
     </div>
     <div style="border-top: 2px solid var(--color-text); border-bottom: 2px solid var(--color-text);">
-      <sc-for list="{{ services }}" as="s" hint-placeholder-count="5">
-        <div class="g-service" style="display: grid; grid-template-columns: 88px 1.1fr 1.4fr; gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 2px solid var(--color-divider);">
-          <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700); padding-top: 6px;">{{ s.no }}</div>
-          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.1; letter-spacing: -0.02em;">{{ s.title }}</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">{{ s.body }}</p>
+      <div class="g-service" style="display: grid; grid-template-columns: 88px 1.1fr 1.4fr; gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 2px solid var(--color-divider);">
+          <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700); padding-top: 6px;">01</div>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.1; letter-spacing: -0.02em;">Strategic Advisory</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">I work with business leaders, investors, and senior executives to turn strategy into measurable execution. This includes growth strategy, operating model design, transformation roadmaps, performance improvement, and scale-up planning across complex and asset-intensive businesses.</p>
         </div>
-      </sc-for>
+      
+        <div class="g-service" style="display: grid; grid-template-columns: 88px 1.1fr 1.4fr; gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 2px solid var(--color-divider);">
+          <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700); padding-top: 6px;">02</div>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.1; letter-spacing: -0.02em;">Mobility &amp; Transport Advisory</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">With over 15 years of leadership across automotive, mobility, transport, leasing, and fleet operations, I advise organizations on fleet strategy, leasing models, electrification programs, asset lifecycle management, logistics optimization, and transport compliance.</p>
+        </div>
+      
+        <div class="g-service" style="display: grid; grid-template-columns: 88px 1.1fr 1.4fr; gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 2px solid var(--color-divider);">
+          <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700); padding-top: 6px;">03</div>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.1; letter-spacing: -0.02em;">Market Entry &amp; GCC Expansion</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">I advise international companies, founders, and investors entering the GCC market on strategic setup, local market positioning, and execution planning — navigating regulatory frameworks, stakeholder engagement, partnership strategy, and operating model design.</p>
+        </div>
+      
+        <div class="g-service" style="display: grid; grid-template-columns: 88px 1.1fr 1.4fr; gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 2px solid var(--color-divider);">
+          <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700); padding-top: 6px;">04</div>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.1; letter-spacing: -0.02em;">Leadership Advisory</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">Senior-level support to business leaders facing complex and high-impact challenges. This includes diagnosing issues, structuring decisions, and working through critical situations where clarity, experience, and sound judgment are required to move forward with confidence.</p>
+        </div>
+      
+        <div class="g-service" style="display: grid; grid-template-columns: 88px 1.1fr 1.4fr; gap: var(--space-6); padding: var(--space-8) 0; border-bottom: 2px solid var(--color-divider);">
+          <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-accent-700); padding-top: 6px;">05</div>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 1.9vw, 30px); line-height: 1.1; letter-spacing: -0.02em;">Investor &amp; Board Advisory</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">I work with investors, boards, and senior decision-makers on strategic reviews, due diligence, operational assessments, and transformation opportunities — supporting investment decisions, turnaround strategies, business scaling, and leadership alignment.</p>
+        </div>
     </div>
   </section>
 
@@ -251,15 +273,61 @@
       </div>
       <div style="padding: var(--space-8) 0 56px var(--space-8); border-left: 2px solid var(--color-divider);">
         <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">What changes, what does not</div>
-        <sc-for list="{{ aiSplit }}" as="a" hint-placeholder-count="7">
-          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
-            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: {{ a.color }}; min-width: 76px;">{{ a.kind }}</span>
+        <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); min-width: 76px;">Changes</span>
             <span style="display: flex; flex-direction: column; gap: 2px;">
-              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">{{ a.name }}</span>
-              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">{{ a.note }}</span>
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Speed</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Insights and recommendations are generated faster.</span>
             </span>
           </div>
-        </sc-for>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); min-width: 76px;">Changes</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Scale</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Patterns emerge across vast datasets.</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); min-width: 76px;">Changes</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Consistency</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Processes become more standardised.</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-700); min-width: 76px;">Unchanged</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Judgment</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Someone still has to decide what the evidence means.</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-700); min-width: 76px;">Unchanged</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Accountability</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">A model cannot own an outcome.</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-700); min-width: 76px;">Unchanged</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Trust</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Adoption follows confidence, not capability.</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-700); min-width: 76px;">Unchanged</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Alignment</span>
+              <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Unclear decision rights get faster, not clearer.</span>
+            </span>
+          </div>
       </div>
     </div>
     <div style="background: var(--color-accent); color: #fff; padding: 72px var(--space-8);">
@@ -356,28 +424,106 @@
       </div>
       <div style="padding: var(--space-8) 0 56px var(--space-8); border-left: 2px solid var(--color-divider);">
         <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">Credentials &amp; Affiliations</div>
-        <sc-for list="{{ credentials }}" as="c" hint-placeholder-count="5">
-          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
-            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">{{ c.name }}</span>
-            <span style="font-size: 13px; color: var(--color-neutral-700);">{{ c.note }}</span>
-            <sc-if value="{{ c.hasHref }}" hint-placeholder-val="{{ true }}">
-              <a href="{{ c.href }}" target="_blank" rel="noopener" style="margin-top: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);" style-hover="color: var(--color-accent-600);">Chapter leadership →</a>
-            </sc-if>
+        <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">DAST Awards — four-time winner</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">Dubai Award for Sustainable Transport, under the patronage of HH Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum — Transportation Safety, Mobility Management, Environmental Protection</span>
           </div>
-        </sc-for>
+        
+          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Columbia Business School</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">Alumnus</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Columbia Business School UAE Chapter</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">Vice President</span>
+              <a href="https://uae.alumni.columbia.edu/club_leadership" target="_blank" rel="noopener" style="margin-top: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);" style-hover="color: var(--color-accent-600);">Chapter leadership →</a>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">GLG</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">Council member / advisor</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">AlphaSights</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">Advisor</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Sectors</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">Automotive, mobility, transport, leasing, fleet, logistics</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 2px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Geography</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700);">UAE and wider GCC; multi-country programs</span>
+          </div>
       </div>
     </div>
 
     <div style="padding: 56px 0 0;">
       <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">Career</div>
       <div style="border-top: 2px solid var(--color-text);">
-        <sc-for list="{{ roles }}" as="r" hint-placeholder-count="8">
-          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
-            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">{{ r.years }}</span>
-            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">{{ r.org }}</span>
-            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">{{ r.role }}</span>
+        <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2021 — present</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Al-Futtaim Financial Services, Hertz &amp; MOOV by AF</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">General Manager — Fleet, Mobility &amp; Logistics</span>
           </div>
-        </sc-for>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2011 — present</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Eva Elite Consulting</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">Managing Director</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2010 — present</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Columbia Business School UAE Chapter</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">Vice President</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2018 — 2021</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Houst (formerly Airsorted)</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">General Manager / Partner, Dubai</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2017 — 2018</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Avis Rent a Car</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">General Manager — Rental &amp; Leasing</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2016 — 2017</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Avis Service Center</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">General Manager — Fleet Maintenance</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2011 — 2018</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Avis Rent a Car</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">General Manager — Passenger Transport &amp; Fleet/Mobility Solutions</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2009 — 2011</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Avis Rent a Car</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">Operations Manager</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2005 — 2009</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Renault–Nissan</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">Production Scheduling &amp; Launching Manager</span>
+          </div>
+        
+          <div class="g-role" style="display: grid; grid-template-columns: 150px 1.1fr 1fr; gap: var(--space-6); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700); letter-spacing: 0.04em;">2004 — 2005</span>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 17px; letter-spacing: -0.01em;">Maersk Line</span>
+            <span style="font-size: 14px; line-height: 1.5; color: var(--color-neutral-800);">Logistics Supervisor</span>
+          </div>
       </div>
     </div>
   </section>
@@ -444,43 +590,94 @@
       <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: clamp(28px, 3vw, 44px); letter-spacing: -0.02em; text-transform: uppercase;">How I Work</h2>
     </div>
     <div class="stack g-how" style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--color-text); border-bottom: 2px solid var(--color-text);">
-      <sc-for list="{{ formats }}" as="f" hint-placeholder-count="3">
-        <div style="{{ f.cellStyle }}">
-          <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--color-accent-700);">{{ f.no }}</span>
-          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: 21px; line-height: 1.15; letter-spacing: -0.015em; text-wrap: pretty;">{{ f.title }}</h3>
-          <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--color-neutral-700);">{{ f.shape }}</span>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty;">{{ f.body }}</p>
+      <div style="display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-8) var(--space-6) 56px 0;">
+          <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--color-accent-700);">01</span>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: 21px; line-height: 1.15; letter-spacing: -0.015em; text-wrap: pretty;">Strategic Diagnostic</h3>
+          <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--color-neutral-700);">Four to six weeks</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty;">A focused review of a defined problem — growth, cost, operating model, or fleet performance. Interviews, data review, and a written set of findings with prioritised recommendations and an execution sequence.</p>
         </div>
-      </sc-for>
+      
+        <div style="display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-8) var(--space-6) 56px; border-left: 2px solid var(--color-divider);">
+          <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--color-accent-700);">02</span>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: 21px; line-height: 1.15; letter-spacing: -0.015em; text-wrap: pretty;">Retained Advisory</h3>
+          <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--color-neutral-700);">Ongoing, monthly</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty;">A standing relationship with a CEO, board, or leadership team. Regular sessions on live decisions, plus availability between them. Suited to organisations in transformation or entering the GCC market.</p>
+        </div>
+      
+        <div style="display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-8) 0 56px var(--space-6); border-left: 2px solid var(--color-divider);">
+          <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--color-accent-700);">03</span>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 800; font-size: 21px; line-height: 1.15; letter-spacing: -0.015em; text-wrap: pretty;">Expert Consultation</h3>
+          <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--color-neutral-700);">Single sessions</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--color-neutral-800); text-wrap: pretty;">One-off calls for investors, funds, and corporates needing sector insight on automotive, mobility, transport, leasing, or fleet in the GCC. Available directly or through GLG and AlphaSights.</p>
+        </div>
     </div>
     <div class="stack g-record" style="display: grid; grid-template-columns: 1.5fr 1fr; border-bottom: 2px solid var(--color-text);">
       <div style="padding: var(--space-8) var(--space-8) 56px 0;">
         <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">The first conversation</div>
         <p style="margin: 0 0 var(--space-6); font-size: 17px; line-height: 1.6; max-width: 62ch; text-wrap: pretty;">Every engagement starts with a short, no-obligation call. It is a working conversation, not a pitch — by the end you should know whether I am the right person for the problem, and if so, what a scope would look like.</p>
         <div style="border-top: 2px solid var(--color-divider);">
-          <sc-for list="{{ firstCall }}" as="q" hint-placeholder-count="4">
-            <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
-              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; color: var(--color-neutral-700);">{{ q.no }}</span>
-              <span style="font-size: 15px; line-height: 1.55;">{{ q.text }}</span>
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; color: var(--color-neutral-700);">01</span>
+              <span style="font-size: 15px; line-height: 1.55;">The decision or problem in front of you, and what has already been tried.</span>
             </div>
-          </sc-for>
+          
+            <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; color: var(--color-neutral-700);">02</span>
+              <span style="font-size: 15px; line-height: 1.55;">Where the real constraint sits — strategy, operating model, capability, or stakeholder alignment.</span>
+            </div>
+          
+            <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; color: var(--color-neutral-700);">03</span>
+              <span style="font-size: 15px; line-height: 1.55;">Whether my experience is genuinely relevant, or whether someone else is the better fit.</span>
+            </div>
+          
+            <div style="display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-bottom: 2px solid var(--color-divider); align-items: baseline;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; color: var(--color-neutral-700);">04</span>
+              <span style="font-size: 15px; line-height: 1.55;">If it is a fit: the shape of an engagement, what it would produce, and over what period.</span>
+            </div>
         </div>
       </div>
       <div style="padding: var(--space-8) 0 56px var(--space-8); border-left: 2px solid var(--color-divider);">
         <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin-bottom: var(--space-6);">Principles</div>
-        <sc-for list="{{ principles }}" as="p" hint-placeholder-count="4">
-          <div style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
-            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">{{ p.name }}</span>
-            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">{{ p.note }}</span>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Findings, not decks</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Written recommendations you can act on, sized to the decision rather than the budget.</span>
           </div>
-        </sc-for>
+        
+          <div style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Operator&#39;s view</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Every recommendation is tested against whether it can actually be executed by the team you have.</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Direct engagement</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">You work with me. No leverage model, no rotating juniors.</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 15px;">Confidentiality</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Client work is not published or named without explicit permission.</span>
+          </div>
         <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-700); margin: var(--space-8) 0 var(--space-6);">What I do not take on</div>
-        <sc-for list="{{ declines }}" as="d" hint-placeholder-count="3">
+        <div style="display: flex; gap: var(--space-4); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700);">—</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Implementation staffing or interim resourcing — I advise, I do not backfill teams.</span>
+          </div>
+        
           <div style="display: flex; gap: var(--space-4); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
             <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700);">—</span>
-            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">{{ d.text }}</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Work where the decision has already been made and the analysis is needed to justify it.</span>
           </div>
-        </sc-for>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700);">—</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Competing on price against large firms; the scope is sized to the decision, not to a procurement cycle.</span>
+          </div>
+        
+          <div style="display: flex; gap: var(--space-4); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-neutral-300); align-items: baseline;">
+            <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; color: var(--color-neutral-700);">—</span>
+            <span style="font-size: 13px; line-height: 1.5; color: var(--color-neutral-700);">Engagements where I would not have direct access to the people accountable for the outcome.</span>
+          </div>
       </div>
     </div>
   </section>
@@ -511,7 +708,7 @@
             <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.85;">WhatsApp</span>
             <span style="font-family: var(--font-heading); font-weight: 700; font-size: 19px;">+971 50 812 1801</span>
           </a>
-          <a href="{{ linkedinUrl }}" style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-6) 0; border-bottom: 2px solid #fff; color: #fff;" style-hover="background: var(--color-accent-600); color: #fff; padding-left: var(--space-4);">
+          <a href="https://www.linkedin.com/in/shahriar-rezvani-b1514921/" target="_blank" rel="noopener" style="display: flex; flex-direction: column; gap: 4px; padding: var(--space-6) 0; border-bottom: 2px solid #fff; color: #fff;" style-hover="background: var(--color-accent-600); color: #fff; padding-left: var(--space-4);">
             <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.85;">LinkedIn</span>
             <span style="font-family: var(--font-heading); font-weight: 700; font-size: 19px;">Connect on LinkedIn</span>
           </a>
