@@ -88,7 +88,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="_ds/modernist-d014aa12-caa7-4812-a6af-37fb9b50e1ba/styles.css">
 <script src="./support.js"></script>
-<script src="/insights-filter.js" defer></script>
+
 <script src="/measurement.js" defer></script>
 <style>
 #insight-filters:not([hidden]){display:flex;flex-wrap:wrap;gap:8px}
@@ -102,6 +102,7 @@
 .insight-card p{margin:0;font-size:14px;line-height:1.6}
 .insight-date{margin-top:auto;font-size:12px}
 </style>
+<link rel="stylesheet" href="/insights.css">
 </head>
 <body>
 <x-dc>
@@ -373,41 +374,22 @@
     </div>
   </section>
 
-  <section id="insights" style="max-width:1440px;margin:0 auto;padding:0 var(--space-8)">
-    <div class="g-insights-head" style="display:flex;align-items:baseline;gap:var(--space-6);padding:72px 0 var(--space-8);flex-wrap:wrap">
-      <span style="color:var(--color-accent-700)">04</span>
-      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3vw,44px);text-transform:uppercase">Insights</h2>
-      <div id="insight-filters" hidden role="group" aria-label="Filter insights by topic"><button type="button" data-insight-filter="All" aria-pressed="true">All</button>
-<button type="button" data-insight-filter="Mobility &amp; Transport" aria-pressed="false">Mobility &amp; Transport</button>
-<button type="button" data-insight-filter="People &amp; Talent" aria-pressed="false">People &amp; Talent</button>
-<button type="button" data-insight-filter="Mobility" aria-pressed="false">Mobility</button>
-<button type="button" data-insight-filter="Leadership" aria-pressed="false">Leadership</button>
-<button type="button" data-insight-filter="Strategy" aria-pressed="false">Strategy</button>
-<button type="button" data-insight-filter="Transformation" aria-pressed="false">Transformation</button>
-<button type="button" data-insight-filter="Growth" aria-pressed="false">Growth</button>
-<button type="button" data-insight-filter="Technology" aria-pressed="false">Technology</button>
-<button type="button" data-insight-filter="Sustainability" aria-pressed="false">Sustainability</button></div>
-    </div>
-    <p id="insight-count" aria-live="polite">19 insights</p>
-    <div class="g-insights"><a class="insight-card" data-insight-tag="Mobility &amp; Transport" href="/insights/gcc-ev-opportunity-fleet-yard-not-showroom/"><span class="tag tag-accent">Mobility &amp; Transport</span><h3>The GCC’s EV Opportunity Is Being Won or Lost in the Fleet Yard — Not the Showroom</h3><p>Why fleet operators — not individual consumers — are where the real electrification battle will be decided</p><span class="insight-date">12 September 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Mobility &amp; Transport" href="/insights/abu-dhabi-31000-autonomous-rides/"><span class="tag tag-accent">Mobility &amp; Transport</span><h3>Abu Dhabi Just Hit 31,000 Autonomous Rides. The Mobility Industry Hasn’t Noticed Yet.</h3><p>A balanced assessment of what autonomous vehicles will actually mean for the GCC — and for the businesses that operate here</p><span class="insight-date">14 August 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Mobility &amp; Transport" href="/insights/ride-hailing-gcc-green-problem/"><span class="tag tag-accent">Mobility &amp; Transport</span><h3>Ride-Hailing in the GCC Has a Green Problem — and Running Out of Time to Solve It</h3><p>Why Uber, Careem and regional operators must electrify their fleets now — before the market does it for them</p><span class="insight-date">11 July 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="People &amp; Talent" href="/insights/why-the-right-hire-matters-more-than-any-strategy/"><span class="tag tag-accent">People &amp; Talent</span><h3>Why the Right Hire Matters More Than Any Strategy</h3><p>Organizations often attribute underperformance to strategy, market conditions, or execution challenges.</p><span class="insight-date">18 June 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="People &amp; Talent" href="/insights/talent-isnt-enough-why-the-right-people-matter-more/"><span class="tag tag-accent">People &amp; Talent</span><h3>Talent Isn’t Enough: Why the “Right” People Matter More</h3><p>Organizations invest heavily in talent. Hiring strategies, leadership pipelines, performance management systems, and succession plans occupy a central place in executive agendas.</p><span class="insight-date">2 May 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="People &amp; Talent" href="/insights/most-strategy-problems-are-actually-people-problems/"><span class="tag tag-accent">People &amp; Talent</span><h3>Most Strategy Problems Are Actually People Problems</h3><p>Lessons from Leading a Top-Tier Organization Through Record Performance</p><span class="insight-date">14 April 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Mobility" href="/insights/rethinking-transport-and-mobility-in-a-world-of-complexity/"><span class="tag tag-accent">Mobility</span><h3>Rethinking Transport &amp; Mobility in a World of Complexity</h3><p>Transport and mobility are no longer simply about moving people and goods from point A to point B.</p><span class="insight-date">9 March 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Leadership" href="/insights/what-saadi-teaches-leaders-about-legacy/"><span class="tag tag-accent">Leadership</span><h3>What Saadi Teaches Leaders About Legacy</h3><p>Centuries before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.</p><span class="insight-date">21 February 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="People &amp; Talent" href="/insights/belonging-isn-t-hr-s-job-it-s-the-ceo-s/"><span class="tag tag-accent">People &amp; Talent</span><h3>Belonging Isn't HR's Job — It's the CEO's</h3><p>Why the most underinvested lever in strategy execution sits at the top of the organization</p><span class="insight-date">30 January 2026 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Strategy" href="/insights/why-smart-leaders-keep-making-the-same-strategy-mistake/"><span class="tag tag-accent">Strategy</span><h3>Why Smart Leaders Keep Making the Same Strategy Mistake</h3><p>The knowing-doing gap is real — and more costly than most executives admit</p><span class="insight-date">12 December 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Transformation" href="/insights/still-running-a-2010-playbook-your-customers-have-already-left/"><span class="tag tag-accent">Transformation</span><h3>Still Running a 2010 Playbook? Your Customers Have Already Left.</h3><p>Customer behaviour has changed permanently. Most transformation strategies haven't caught up.</p><span class="insight-date">6 November 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Leadership" href="/insights/rethinking-what-alignment-actually-means-in-2026/"><span class="tag tag-accent">Leadership</span><h3>Rethinking What 'Alignment' Actually Means in 2026</h3><p>The concept hasn't changed. The conditions under which leaders must achieve it have.</p><span class="insight-date">23 October 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Mobility" href="/insights/what-the-car-rental-business-taught-me-that-business-school-didn-t/"><span class="tag tag-accent">Mobility</span><h3>What the Car Rental Business Taught Me That Business School Didn't</h3><p>On the gap between strategic frameworks and the reality of leading at scale</p><span class="insight-date">4 September 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Growth" href="/insights/maximizing-growth-in-the-mobility-and-automotive-industry/"><span class="tag tag-accent">Growth</span><h3>Maximizing Growth in the Mobility and Automotive Industry</h3><p>Igniting the Future of Mobility and Automotive Growth</p><span class="insight-date">19 July 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Technology" href="/insights/ai-will-change-how-organizations-work/"><span class="tag tag-accent">Technology</span><h3>AI Will Change How Organizations Work — But People Decide Whether It Works</h3><p>Artificial intelligence is rapidly reshaping organizational life.</p><span class="insight-date">28 May 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Leadership" href="/insights/leadership-in-islam-an-ethical-framework-for-modern-leadership/"><span class="tag tag-accent">Leadership</span><h3>Leadership in Islam: An Ethical Framework for Modern Leadership</h3><p>In today’s business and political landscape, leadership is often defined by speed, decisiveness, and results.</p><span class="insight-date">11 March 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Growth" href="/insights/enhancing-your-automotive-business-in-a-competitive-market/"><span class="tag tag-accent">Growth</span><h3>Enhancing Your Automotive Business in a Competitive Market</h3><p>Driving the Shift in Automotive Growth</p><span class="insight-date">17 January 2025 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Sustainability" href="/insights/top-strategies-for-sustainable-growth-in-the-automotive-sector/"><span class="tag tag-accent">Sustainability</span><h3>Top Strategies for Sustainable Growth in the Automotive Sector</h3><p>Accelerating Toward a Greener Automotive Future</p><span class="insight-date">8 October 2024 <span aria-hidden="true">Read →</span></span></a>
-<a class="insight-card" data-insight-tag="Mobility" href="/insights/shifting-gears-embracing-challenges-and-opportunities-in-mobility/"><span class="tag tag-accent">Mobility</span><h3>Shifting Gears: Embracing Challenges and Opportunities in Mobility</h3><p>The automotive and mobility space is evolving faster than ever, presenting both formidable challenges and extraordinary opportunities.</p><span class="insight-date">26 June 2024 <span aria-hidden="true">Read →</span></span></a></div>
+  <section id="insights" class="featured-insights" style="max-width:1440px;margin:0 auto;padding:0 var(--space-8)">
+    <div class="reading-section-heading"><span class="reading-number">04</span><h2>Insights</h2><span class="reading-kicker">Selected perspectives</span></div>
+    <div class="reading-grid"><a class="reading-card" data-insight-tag="Mobility &amp; Transport" href="/insights/gcc-ev-opportunity-fleet-yard-not-showroom/">
+      <img src="/blog/mobility.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>The GCC’s EV Opportunity Is Being Won or Lost in the Fleet Yard — Not the Showroom</h3><p>Why fleet operators — not individual consumers — are where the real electrification battle will be decided</p>
+      <span class="reading-meta"><time datetime="2026-09-12">12 September 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" data-insight-tag="Leadership &amp; People" href="/insights/most-strategy-problems-are-actually-people-problems/">
+      <img src="/blog/people-problems.jpeg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>Most Strategy Problems Are Actually People Problems</h3><p>Lessons from Leading a Top-Tier Organization Through Record Performance</p>
+      <span class="reading-meta"><time datetime="2026-04-14">14 April 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" data-insight-tag="Strategy &amp; Transformation" href="/insights/ai-will-change-how-organizations-work/">
+      <img src="/blog/ai-organizations.jpg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Strategy &amp; Transformation</span>
+      <h3>AI Will Change How Organizations Work — But People Decide Whether It Works</h3><p>Artificial intelligence is rapidly reshaping organizational life.</p>
+      <span class="reading-meta"><time datetime="2025-05-28">28 May 2025</time><span aria-hidden="true">Read →</span></span></div></a></div>
+    <div class="reading-more"><a href="/insights/">View all insights <span aria-hidden="true">→</span></a></div>
   </section>
 
   <section id="record" style="max-width: 1440px; margin: 0 auto; padding: 0 var(--space-8);">
