@@ -246,6 +246,141 @@ export const POSTS = [
     "image": "blog/mobility.webp"
   },
   {
+    "title": "Ride-Hailing in the GCC Has a Green Problem — and Running Out of Time to Solve It",
+    "date": "11 July 2026",
+    "tag": "Mobility & Transport",
+    "href": "/insights/ride-hailing-gcc-green-problem/",
+    "summary": "Why Uber, Careem and regional operators must electrify their fleets now — before the market does it for them",
+    "standfirst": "Why Uber, Careem and regional operators must electrify their fleets now — before the market does it for them",
+    "blocks": [
+      {
+        "t": "p",
+        "text": "Ten percent of Uber trips in Dubai are already taking place in an electric vehicle. Careem is partnering with Geely-owned Farizon to electrify its delivery fleet. The UAE government has mandated that electric and hybrid vehicles make up ten percent of all vehicles by 2030 and fifty percent by 2050."
+      },
+      {
+        "t": "p",
+        "text": "Taken individually, each of these facts sounds like progress. Taken together, they reveal something more uncomfortable: the GCC’s ride-hailing industry is moving incrementally on electrification in a market that is about to demand it structurally."
+      },
+      {
+        "t": "p",
+        "text": "That gap — between the pace of voluntary transition and the pace of regulatory and competitive pressure — is where ride-hailing operators in this region face their most significant strategic decision of the next five years."
+      },
+      {
+        "t": "h",
+        "text": "The Business Case Is Already There — Most Operators Are Not Acting on It"
+      },
+      {
+        "t": "p",
+        "text": "The conversation about EVs in ride-hailing has historically centred on sustainability credentials and government compliance. Both matter. But the most compelling argument for electrification in the GCC’s ride-hailing sector is not environmental or regulatory — it is economic, and it is available right now."
+      },
+      {
+        "t": "p",
+        "text": "An electric vehicle operating in a high-utilisation ride-hailing context — eight to twelve hours daily across urban routes — generates dramatically lower per-kilometre fuel costs than an equivalent petrol vehicle. In the UAE, where petrol prices have risen and electricity tariffs for EV charging remain relatively stable, the energy cost advantage of EVs compounds meaningfully across a fleet over a twelve-month period."
+      },
+      {
+        "t": "p",
+        "text": "Maintenance costs tell the same story. EVs have significantly fewer moving parts than internal combustion engines — no oil changes, fewer brake replacements due to regenerative braking, simpler drivetrain servicing. For a driver operating on commission or a fleet operator managing hundreds of units, this is not a marginal saving. It is a material improvement in operating economics that flows directly to the bottom line."
+      },
+      {
+        "t": "p",
+        "text": "The total cost of ownership argument for EVs in high-utilisation ride-hailing fleets in the GCC is already positive. The barrier is not the numbers. It is the organisational willingness to act on them."
+      },
+      {
+        "t": "h",
+        "text": "What Uber and Careem Are — and Are Not — Doing"
+      },
+      {
+        "t": "p",
+        "text": "To be fair to the major platforms, neither is standing still."
+      },
+      {
+        "t": "p",
+        "text": "Uber’s commitments in the UAE have been visible — ten percent of Dubai trips now in EVs is a genuine milestone, and Uber Green pricing has been adjusted to match standard fares, removing the premium that previously discouraged EV choice among riders. The ambition to make Dubai one of Uber’s top global cities for EV transition is stated clearly."
+      },
+      {
+        "t": "p",
+        "text": "Careem’s partnership with Jameel Motors to introduce Farizon electric vehicles into its delivery operations aims to reduce carbon emissions across its logistics network and lower operating costs — a meaningful step, though it is worth noting this initiative targets delivery fleets rather than the passenger ride-hailing service where the volume and impact are greatest. [gccbusinessnews](https://www.gccbusinessnews.com/?p=129605)"
+      },
+      {
+        "t": "p",
+        "text": "What both operators have not yet done — publicly, at least — is commit to a hard timeline for full passenger fleet electrification in the GCC. The initiatives are real but they remain voluntary, partial, and framed primarily around sustainability narrative rather than competitive positioning."
+      },
+      {
+        "t": "p",
+        "text": "This matters because the frame shapes the urgency. When electrification is a sustainability initiative, it competes with other priorities and moves at the pace leadership allows. When it is a competitive necessity, it moves at the pace the market demands."
+      },
+      {
+        "t": "p",
+        "text": "The GCC ride-hailing market is approaching the second of those conditions faster than most operators appear to have planned for."
+      },
+      {
+        "t": "h",
+        "text": "The Competitive Pressure Nobody Is Talking About"
+      },
+      {
+        "t": "p",
+        "text": "The most underappreciated dynamic in the GCC ride-hailing electrification story is not regulatory pressure from governments. It is competitive pressure from new entrants."
+      },
+      {
+        "t": "p",
+        "text": "Chinese EV manufacturers — BYD, Chery, and others — are not simply selling vehicles in the GCC. They are building ecosystem relationships with fleet operators, leasing companies, and increasingly with mobility platforms. A ride-hailing operator that partners with a Chinese OEM on an electric fleet programme gets access to vehicles at price points that reshape the economics of the business — and builds a cost structure that pure ICE competitors cannot match over a three-to-five-year horizon."
+      },
+      {
+        "t": "p",
+        "text": "The operators who move first on electrification in this market will not just reduce costs. They will restructure the competitive landscape in their favour, because their per-trip economics will be fundamentally different from operators who delayed. In a market where pricing pressure is constant and driver earnings are a perennial tension, that structural cost advantage is not a minor operational benefit. It is a strategic moat."
+      },
+      {
+        "t": "p",
+        "text": "There is also a customer dimension that the data is beginning to surface. Rider preference for EV trips in the UAE is growing — not because of environmental conviction, but because the experience is measurably better. Quieter, smoother, cleaner interiors. In a region where customer experience expectations are exceptionally high and brand differentiation in ride-hailing is limited, an all-electric fleet is a product advantage, not just a compliance credential."
+      },
+      {
+        "t": "h",
+        "text": "What Getting This Right Looks Like"
+      },
+      {
+        "t": "p",
+        "text": "The ride-hailing operators that will lead GCC fleet electrification successfully share a few characteristics that are worth naming."
+      },
+      {
+        "t": "p",
+        "text": "They treat it as a platform decision, not a fleet decision. The shift to EVs requires changes to driver onboarding, incentive structures, charging logistics, and customer communication — none of which sit within a traditional fleet management function. The operators who electrify effectively do so because leadership has made it a cross-functional strategic priority, not delegated it to a procurement team."
+      },
+      {
+        "t": "p",
+        "text": "They invest in driver economics first. The single biggest accelerant of voluntary EV adoption among ride-hailing drivers is a clear, credible demonstration that operating an EV improves their take-home earnings. Platforms that build EV-specific driver incentives — preferential lease rates, charging subsidies, EV-priority dispatch — create pull rather than push. The ones that mandate without supporting find resistance, churn, and reputational friction."
+      },
+      {
+        "t": "p",
+        "text": "They build charging infrastructure partnerships proactively. Waiting for the public charging network to reach sufficient density before committing to EVs is a strategy for permanent delay. The operators moving fastest are the ones securing depot charging agreements, partnering with DEWA, ADNOC Distribution, and private charging providers to guarantee their drivers access to reliable charging without competing with the general public for limited stations."
+      },
+      {
+        "t": "h",
+        "text": "A Final Thought"
+      },
+      {
+        "t": "p",
+        "text": "The GCC ride-hailing market is at the same inflection point that fleet electrification reached two years ago in Europe — the moment where the question shifted from whether to electrify to how fast and at what cost if you don’t."
+      },
+      {
+        "t": "p",
+        "text": "The operators who read that moment correctly built cost structures, driver relationships, and customer propositions that their slower competitors have spent the subsequent years struggling to match."
+      },
+      {
+        "t": "p",
+        "text": "The same opportunity — and the same risk — is present in this market today."
+      },
+      {
+        "t": "p",
+        "text": "Ten percent of Dubai Uber trips in EVs is an encouraging start. It is not a destination. The operators who treat it as one will find, in three to four years, that the market has moved considerably further than they did."
+      },
+      {
+        "t": "p",
+        "text": "The window for proactive electrification in GCC ride-hailing is open. It will not stay that way indefinitely."
+      }
+    ],
+    "image": "blog/mobility.webp"
+  },
+  {
     "title": "Why the Right Hire Matters More Than Any Strategy",
     "date": "18 June 2026",
     "tag": "People & Talent",
