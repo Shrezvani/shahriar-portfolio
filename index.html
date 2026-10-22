@@ -131,9 +131,19 @@
   .g-mobile-menu summary:focus-visible, .g-mobile-links a:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
   .g-hero > div:first-child { padding-top: 40px !important; padding-bottom: 40px !important; }
   .g-awards > *:nth-child(n) { border-left: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
-  /* Outrank the later tablet rules, including nth-child borders. */
-  #top .g-proof, #top .g-proof > * { border: 0 !important; }
-  #top .g-proof > * { padding: 24px 0 !important; }
+  /* The proof strip is a sibling of #top; target it directly. */
+  #career-highlights.g-proof {
+    border: 0 !important;
+    gap: 12px !important;
+    padding: 20px 0 !important;
+  }
+  #career-highlights.g-proof > * {
+    border: 1px solid #dcdad7 !important;
+    border-radius: 16px;
+    background: #fff;
+    padding: 22px 20px !important;
+    min-width: 0;
+  }
   #contact a { min-width: 0; overflow-wrap: anywhere; }
   section[id] { scroll-margin-top: 92px; }
 }
@@ -268,7 +278,7 @@
 
   <sc-if value="{{ showProofStrip }}" hint-placeholder-val="{{ true }}">
     <section style="max-width: 1440px; margin: 0 auto; padding: 0 var(--space-8);">
-      <div class="stack g-proof" style="display: grid; grid-template-columns: repeat(6, 1fr); border-bottom: 2px solid var(--color-text);">
+      <div id="career-highlights" class="stack g-proof" style="display: grid; grid-template-columns: repeat(6, 1fr); border-bottom: 2px solid var(--color-text);">
         <div style="padding: var(--space-8) var(--space-6) var(--space-8) 0;">
           <div style="font-family: var(--font-heading); font-weight: 900; font-size: 44px; line-height: 1; letter-spacing: -0.03em;">20</div>
           <div style="margin-top: var(--space-2); font-size: 13px; line-height: 1.45; color: var(--color-neutral-800);">Years of executive leadership across mobility, transport and asset-intensive businesses</div>
