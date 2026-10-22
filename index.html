@@ -103,7 +103,7 @@
 .insight-date{margin-top:auto;font-size:12px}
 
 /* Native disclosure keeps mobile navigation usable before JavaScript loads. */
-.g-mobile-menu { display: none; }
+.g-mobile-menu, .g-mobile-shortcuts { display: none; }
 @media (max-width: 720px) {
   .g-navbar.g-navbar { flex-wrap: nowrap !important; min-height: 64px; box-sizing: border-box; }
   .g-navbar > a { font-size: 13px !important; letter-spacing: .08em !important; }
@@ -145,7 +145,19 @@
     min-width: 0;
   }
   #contact a { min-width: 0; overflow-wrap: anywhere; }
-  section[id] { scroll-margin-top: 92px; }
+  .g-mobile-shortcuts {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0 12px 6px; gap: 4px;
+  }
+  .g-mobile-shortcuts a {
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    min-height: 44px; padding: 4px; box-sizing: border-box;
+    border-radius: 8px; background: #e9e7e4; color: var(--color-text);
+    font-size: 11px; line-height: 1.2; font-weight: 700;
+  }
+  .g-mobile-shortcuts a:last-child { background: var(--color-accent); color: #fff; }
+  .g-mobile-shortcuts a:focus-visible { outline: 3px solid var(--color-text); outline-offset: 2px; }
+  section[id], #profile, #insights, #record, #contact { scroll-margin-top: 144px; }
 }
 @media (max-width: 520px) {
   #top { padding-left: var(--space-4) !important; padding-right: var(--space-4) !important; }
@@ -255,6 +267,12 @@
       </nav>
       </details>
     </div>
+    <nav class="g-mobile-shortcuts" aria-label="Quick navigation">
+      <a href="#profile">Profile</a>
+      <a href="#insights">Insights</a>
+      <a href="#record">Track record</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section id="top" style="max-width: 1440px; margin: 0 auto; padding: 0 var(--space-8);">
