@@ -103,6 +103,7 @@
 .insight-date{margin-top:auto;font-size:12px}
 </style>
 <link rel="stylesheet" href="/insights.css">
+<script src="/insights-filter.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -248,7 +249,7 @@
     <div class="stack g-profile" style="display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--color-text); border-bottom: 2px solid var(--color-text);">
       <div style="padding: var(--space-8) var(--space-6) 48px 0;">
         <h3 style="margin: 0 0 var(--space-4); font-family: var(--font-heading); font-weight: 800; font-size: 19px; letter-spacing: -0.01em;">Professional Background</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">Strategy and advisory executive with 20 years of experience supporting leadership teams, investors, and public-sector stakeholders on transformation and performance improvement across asset-intensive sectors. Work sits at the intersection of strategy, operating-model design, and execution, with a track record advising on large-scale portfolios, complex regulatory environments, and multi-country programs. Known for a pragmatic, data-driven approach to growth, efficiency, and governance challenges, combining senior-level advisory perspective with deep operational understanding to translate strategic intent into measurable outcomes.</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-neutral-800); text-wrap: pretty;">Strategy and advisory executive with 20 years of experience supporting leadership teams, investors, and public-sector stakeholders on transformation and performance improvement across asset-intensive sectors. Work sits at the intersection of strategy, operating-model design, and execution, with a track record advising on large-scale portfolios, complex regulatory environments, and multi-country programs. Known for a pragmatic, data-driven approach to growth, efficiency, and governance challenges, combining senior-level advisory perspective with deep operational understanding to translate strategic intent into measurable outcomes.</p><p style="margin:20px 0 0"><a class="reading-text-link" href="#insights">Read my perspectives →</a></p>
       </div>
       <div style="padding: var(--space-8) var(--space-6) 48px; border-left: 2px solid var(--color-divider);">
         <h3 style="margin: 0 0 var(--space-4); font-family: var(--font-heading); font-weight: 800; font-size: 19px; letter-spacing: -0.01em;">Approach</h3>
@@ -374,8 +375,10 @@
     </div>
   </section>
 
-  <section id="insights" class="featured-insights" style="max-width:1440px;margin:0 auto;padding:0 var(--space-8)">
-    <div class="reading-section-heading"><span class="reading-number">04</span><h2>Insights</h2><span class="reading-kicker">Selected perspectives</span></div>
+  <section id="insights" class="featured-insights" data-home-insights style="max-width:1440px;margin:0 auto;padding:0 var(--space-8)">
+    <div class="reading-section-heading"><span class="reading-number">04</span><h2>Insights</h2><span class="reading-kicker">Explore my perspectives</span></div>
+    <div id="insight-filters" class="reading-controls" hidden role="group" aria-label="Filter insights by topic"><button type="button" data-insight-filter="All" aria-pressed="true">All</button><button type="button" data-insight-filter="Mobility &amp; Transport" aria-pressed="false">Mobility &amp; Transport</button><button type="button" data-insight-filter="Leadership &amp; People" aria-pressed="false">Leadership &amp; People</button><button type="button" data-insight-filter="Strategy &amp; Transformation" aria-pressed="false">Strategy &amp; Transformation</button></div>
+    <p id="insight-count" class="reading-count" role="status" aria-live="polite">Selected perspectives across mobility, leadership and strategy</p>
     <div class="reading-grid"><a class="reading-card" data-insight-tag="Mobility &amp; Transport" href="/insights/gcc-ev-opportunity-fleet-yard-not-showroom/">
       <img src="/blog/mobility.webp" alt="" loading="lazy" width="640" height="360">
       <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
@@ -388,8 +391,72 @@
       <img src="/blog/ai-organizations.jpg" alt="" loading="lazy" width="640" height="360">
       <div class="reading-card-body"><span class="reading-topic">Strategy &amp; Transformation</span>
       <h3>AI Will Change How Organizations Work — But People Decide Whether It Works</h3><p>Artificial intelligence is rapidly reshaping organizational life.</p>
-      <span class="reading-meta"><time datetime="2025-05-28">28 May 2025</time><span aria-hidden="true">Read →</span></span></div></a></div>
-    <div class="reading-more"><a href="/insights/">View all insights <span aria-hidden="true">→</span></a></div>
+      <span class="reading-meta"><time datetime="2025-05-28">28 May 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" data-insight-tag="Mobility &amp; Transport" href="/insights/maximizing-growth-in-the-mobility-and-automotive-industry/">
+      <img src="/blog/maximizing-growth.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Maximizing Growth in the Mobility and Automotive Industry</h3><p>Igniting the Future of Mobility and Automotive Growth</p>
+      <span class="reading-meta"><time datetime="2025-07-19">19 July 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" data-insight-tag="Leadership &amp; People" href="/insights/why-the-right-hire-matters-more-than-any-strategy/">
+      <img src="/blog/right-hire.jpg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>Why the Right Hire Matters More Than Any Strategy</h3><p>Organizations often attribute underperformance to strategy, market conditions, or execution challenges.</p>
+      <span class="reading-meta"><time datetime="2026-06-18">18 June 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" data-insight-tag="Strategy &amp; Transformation" href="/insights/why-smart-leaders-keep-making-the-same-strategy-mistake/">
+      <img src="/blog/strategy-mistake.jpg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Strategy &amp; Transformation</span>
+      <h3>Why Smart Leaders Keep Making the Same Strategy Mistake</h3><p>The knowing-doing gap is real — and more costly than most executives admit</p>
+      <span class="reading-meta"><time datetime="2025-12-12">12 December 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/abu-dhabi-31000-autonomous-rides/">
+      <img src="/blog/mobility.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Abu Dhabi Just Hit 31,000 Autonomous Rides. The Mobility Industry Hasn’t Noticed Yet.</h3><p>A balanced assessment of what autonomous vehicles will actually mean for the GCC — and for the businesses that operate here</p>
+      <span class="reading-meta"><time datetime="2026-08-14">14 August 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/ride-hailing-gcc-green-problem/">
+      <img src="/blog/mobility.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Ride-Hailing in the GCC Has a Green Problem — and Running Out of Time to Solve It</h3><p>Why Uber, Careem and regional operators must electrify their fleets now — before the market does it for them</p>
+      <span class="reading-meta"><time datetime="2026-07-11">11 July 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Leadership &amp; People" href="/insights/talent-isnt-enough-why-the-right-people-matter-more/">
+      <img src="/blog/talent-isnt-enough.jpeg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>Talent Isn’t Enough: Why the “Right” People Matter More</h3><p>Organizations invest heavily in talent. Hiring strategies, leadership pipelines, performance management systems, and succession plans occupy a central place in executive agendas.</p>
+      <span class="reading-meta"><time datetime="2026-05-02">2 May 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/rethinking-transport-and-mobility-in-a-world-of-complexity/">
+      <img src="/blog/mobility.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Rethinking Transport &amp; Mobility in a World of Complexity</h3><p>Transport and mobility are no longer simply about moving people and goods from point A to point B.</p>
+      <span class="reading-meta"><time datetime="2026-03-09">9 March 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Leadership &amp; People" href="/insights/what-saadi-teaches-leaders-about-legacy/">
+      <img src="/blog/saadi.jpeg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>What Saadi Teaches Leaders About Legacy</h3><p>Centuries before leadership frameworks, performance dashboards, and corporate values statements, the Persian poet Saadi captured a truth that remains deeply relevant to modern organizations.</p>
+      <span class="reading-meta"><time datetime="2026-02-21">21 February 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Leadership &amp; People" href="/insights/belonging-isn-t-hr-s-job-it-s-the-ceo-s/">
+      <img src="/blog/belonging.jpg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>Belonging Isn&#x27;t HR&#x27;s Job — It&#x27;s the CEO&#x27;s</h3><p>Why the most underinvested lever in strategy execution sits at the top of the organization</p>
+      <span class="reading-meta"><time datetime="2026-01-30">30 January 2026</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Strategy &amp; Transformation" href="/insights/still-running-a-2010-playbook-your-customers-have-already-left/">
+      <img src="/blog/2010-playbook.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Strategy &amp; Transformation</span>
+      <h3>Still Running a 2010 Playbook? Your Customers Have Already Left.</h3><p>Customer behaviour has changed permanently. Most transformation strategies haven&#x27;t caught up.</p>
+      <span class="reading-meta"><time datetime="2025-11-06">6 November 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Leadership &amp; People" href="/insights/rethinking-what-alignment-actually-means-in-2026/">
+      <img src="/blog/alignment.jpg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>Rethinking What &#x27;Alignment&#x27; Actually Means in 2026</h3><p>The concept hasn&#x27;t changed. The conditions under which leaders must achieve it have.</p>
+      <span class="reading-meta"><time datetime="2025-10-23">23 October 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/what-the-car-rental-business-taught-me-that-business-school-didn-t/">
+      <img src="/blog/car-rental.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>What the Car Rental Business Taught Me That Business School Didn&#x27;t</h3><p>On the gap between strategic frameworks and the reality of leading at scale</p>
+      <span class="reading-meta"><time datetime="2025-09-04">4 September 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Leadership &amp; People" href="/insights/leadership-in-islam-an-ethical-framework-for-modern-leadership/">
+      <img src="/blog/islamic-leadership.jpeg" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Leadership &amp; People</span>
+      <h3>Leadership in Islam: An Ethical Framework for Modern Leadership</h3><p>In today’s business and political landscape, leadership is often defined by speed, decisiveness, and results.</p>
+      <span class="reading-meta"><time datetime="2025-03-11">11 March 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/enhancing-your-automotive-business-in-a-competitive-market/">
+      <img src="/blog/enhancing-automotive.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Enhancing Your Automotive Business in a Competitive Market</h3><p>Driving the Shift in Automotive Growth</p>
+      <span class="reading-meta"><time datetime="2025-01-17">17 January 2025</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/top-strategies-for-sustainable-growth-in-the-automotive-sector/">
+      <img src="/blog/sustainable-growth.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Top Strategies for Sustainable Growth in the Automotive Sector</h3><p>Accelerating Toward a Greener Automotive Future</p>
+      <span class="reading-meta"><time datetime="2024-10-08">8 October 2024</time><span aria-hidden="true">Read →</span></span></div></a><a class="reading-card" hidden data-insight-tag="Mobility &amp; Transport" href="/insights/shifting-gears-embracing-challenges-and-opportunities-in-mobility/">
+      <img src="/blog/mobility.webp" alt="" loading="lazy" width="640" height="360">
+      <div class="reading-card-body"><span class="reading-topic">Mobility &amp; Transport</span>
+      <h3>Shifting Gears: Embracing Challenges and Opportunities in Mobility</h3><p>The automotive and mobility space is evolving faster than ever, presenting both formidable challenges and extraordinary opportunities.</p>
+      <span class="reading-meta"><time datetime="2024-06-26">26 June 2024</time><span aria-hidden="true">Read →</span></span></div></a></div>
+    <div class="reading-more"><a data-explore-insights href="/insights/">Explore all insights <span aria-hidden="true">→</span></a></div>
   </section>
 
   <section id="record" style="max-width: 1440px; margin: 0 auto; padding: 0 var(--space-8);">
