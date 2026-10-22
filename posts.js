@@ -1,7 +1,7 @@
 export const POSTS = [
  {
   "title": "The GCC’s EV Opportunity Is Being Won or Lost in the Fleet Yard — Not the Showroom",
-  "date": "22 October 2026",
+  "date": "12 September 2026",
   "tag": "Mobility & Transport",
   "href": "/insights/gcc-ev-opportunity-fleet-yard-not-showroom/",
   "summary": "Why fleet operators — not individual consumers — are where the real electrification battle will be decided",
