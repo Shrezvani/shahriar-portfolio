@@ -130,7 +130,10 @@
   .g-mobile-links a:last-child { justify-content: center; }
   .g-mobile-menu summary:focus-visible, .g-mobile-links a:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
   .g-hero > div:first-child { padding-top: 40px !important; padding-bottom: 40px !important; }
-  .g-proof > *:nth-child(n), .g-awards > *:nth-child(n) { border-left: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+  .g-awards > *:nth-child(n) { border-left: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+  /* Outrank the later tablet rules, including nth-child borders. */
+  #top .g-proof, #top .g-proof > * { border: 0 !important; }
+  #top .g-proof > * { padding: 24px 0 !important; }
   #contact a { min-width: 0; overflow-wrap: anywhere; }
   section[id] { scroll-margin-top: 92px; }
 }
