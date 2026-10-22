@@ -65,11 +65,18 @@
     document.body.appendChild(panel);
     const preferences = document.createElement("button");
     preferences.type = "button"; preferences.textContent = "Analytics preferences";
-    preferences.style.cssText = "display:block;margin:16px auto;padding:8px 12px;background:#fff;color:#201e1d;border:1px solid #201e1d;cursor:pointer;font:13px system-ui";
+    preferences.style.cssText = "position:static;display:inline-block;margin:0;padding:0;background:transparent;color:inherit;border:0;border-bottom:1px solid currentColor;cursor:pointer;font:inherit;letter-spacing:inherit;text-transform:inherit";
     preferences.addEventListener("click", () => {
       panel.hidden = false; panel.querySelector("button").focus();
     });
-    document.body.appendChild(preferences);
+    // Keep the control in the footer, including after the homepage component renders.
+    const mountPreferences = () => {
+      const footer = document.querySelector("footer");
+      const host = footer && (footer.querySelector("div") || footer);
+      if (host && preferences.parentNode !== host) host.appendChild(preferences);
+    };
+    mountPreferences();
+    new MutationObserver(mountPreferences).observe(document.body, { childList: true, subtree: true });
     start();
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
