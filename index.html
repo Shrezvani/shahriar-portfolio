@@ -101,9 +101,48 @@
 .insight-card h3{margin:0;font:800 22px/1.2 var(--font-heading)}
 .insight-card p{margin:0;font-size:14px;line-height:1.6}
 .insight-date{margin-top:auto;font-size:12px}
+
+/* Native disclosure keeps mobile navigation usable before JavaScript loads. */
+.g-mobile-menu { display: none; }
+@media (max-width: 720px) {
+  .g-navbar.g-navbar { flex-wrap: nowrap !important; min-height: 64px; box-sizing: border-box; }
+  .g-navbar > a { font-size: 13px !important; letter-spacing: .08em !important; }
+  .g-nav { display: none !important; }
+  .g-mobile-menu { display: block; flex: 0 0 auto; }
+  .g-mobile-menu summary {
+    cursor: pointer; min-height: 44px; padding: 0 12px;
+    display: flex; align-items: center; border: 2px solid var(--color-text);
+    font: 600 12px var(--font-heading); text-transform: uppercase; letter-spacing: .08em;
+    list-style: none;
+  }
+  .g-mobile-menu summary::-webkit-details-marker { display: none; }
+  .g-mobile-menu summary::after { content: "+"; margin-left: 10px; font-size: 18px; }
+  .g-mobile-menu[open] summary::after { content: "−"; }
+  .g-mobile-links {
+    position: absolute; top: 100%; left: 0; right: 0;
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 16px; padding: 12px 16px 16px;
+    background: var(--color-bg); border-bottom: 2px solid var(--color-text);
+    max-height: calc(100dvh - 88px); overflow-y: auto;
+    font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .g-mobile-links a { display: flex; align-items: center; min-height: 44px; padding: 8px 0; box-sizing: border-box; }
+  .g-mobile-links a:last-child { justify-content: center; }
+  .g-mobile-menu summary:focus-visible, .g-mobile-links a:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+  .g-hero > div:first-child { padding-top: 40px !important; padding-bottom: 40px !important; }
+  .g-proof > *:nth-child(n), .g-awards > *:nth-child(n) { border-left: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+  #contact a { min-width: 0; overflow-wrap: anywhere; }
+  section[id] { scroll-margin-top: 92px; }
+}
+@media (max-width: 520px) {
+  #top { padding-left: var(--space-4) !important; padding-right: var(--space-4) !important; }
+  #top > .g-hero { padding-left: 0 !important; padding-right: 0 !important; }
+}
+
 </style>
 <link rel="stylesheet" href="/insights.css">
 <script src="/insights-filter.js" defer></script>
+<script src="/mobile-menu.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -188,6 +227,20 @@
         <a href="#how" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Method</a>
         <a href="#contact" style="background: var(--color-accent); color: #fff; padding: 10px var(--space-4); font-weight: 700;" style-hover="background: var(--color-accent-600); color: #fff;">Contact</a>
       </nav>
+      <details class="g-mobile-menu">
+        <summary>Menu</summary>
+        <nav class="g-mobile-links" aria-label="Mobile navigation" style="display: flex; align-items: center; gap: var(--space-6); white-space: nowrap; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;">
+        <a href="#profile" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Profile</a>
+        <a href="#advisory" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Advisory</a>
+        <a href="#ai" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">AI</a>
+        <a href="#insights" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Insights</a>
+        <a href="#record" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Track Record</a>
+        <a href="#engagement" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Work</a>
+        <a href="#awards" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Awards</a>
+        <a href="#how" style="color: var(--color-text);" style-hover="color: var(--color-accent-700);">Method</a>
+        <a href="#contact" style="background: var(--color-accent); color: #fff; padding: 10px var(--space-4); font-weight: 700;" style-hover="background: var(--color-accent-600); color: #fff;">Contact</a>
+      </nav>
+      </details>
     </div>
   </header>
 
