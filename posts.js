@@ -120,7 +120,7 @@ export const POSTS = [
         "text": "The opportunity is real and the window is open. But windows close. And in my experience, the organisations that treat the early stages of a major transition as optional rarely enjoy the options available to the ones that didn’t."
       }
     ],
-    "image": "blog/mobility.webp"
+    "image": "blog/gcc-ev-opportunity.jpg"
   },
   {
     "title": "Abu Dhabi Just Hit 31,000 Autonomous Rides. The Mobility Industry Hasn’t Noticed Yet.",
@@ -243,7 +243,7 @@ export const POSTS = [
         "text": "They are the ones that moved while they still had a choice."
       }
     ],
-    "image": "blog/mobility.webp"
+    "image": "blog/abu-dhabi-autonomous-rides.jpg"
   },
   {
     "title": "Ride-Hailing in the GCC Has a Green Problem — and Running Out of Time to Solve It",
@@ -378,7 +378,7 @@ export const POSTS = [
         "text": "The window for proactive electrification in GCC ride-hailing is open. It will not stay that way indefinitely."
       }
     ],
-    "image": "blog/mobility.webp"
+    "image": "blog/ride-hailing-green-problem.jpg"
   },
   {
     "title": "Why the Right Hire Matters More Than Any Strategy",
@@ -1298,7 +1298,7 @@ export const POSTS = [
         "text": "As cities and regions navigate unprecedented mobility challenges, the focus must shift from doing more to doing better—aligning ambition with delivery, innovation with governance, and strategy with outcomes that genuinely improve how societies move and connect."
       }
     ],
-    "image": "blog/mobility.webp"
+    "image": "blog/rethinking-transport-mobility.jpg"
   },
   {
     "title": "What Saadi Teaches Leaders About Legacy",
@@ -3194,6 +3194,6 @@ export const POSTS = [
         "text": "Embrace these insights to drive sustained industry success. Take decisive steps today, and let this framework guide your strategic initiatives towards a future where growth isn't just a goal, but a continuous journey of improvement and innovation."
       }
     ],
-    "image": "blog/mobility.webp"
+    "image": "blog/shifting-gears.jpg"
   }
 ];
