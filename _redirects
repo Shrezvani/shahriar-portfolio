@@ -1,0 +1,21 @@
+# Legacy article URLs moved to /insights/.
+# Netlify matches these paths with or without a trailing slash.
+/abu-dhabi-31000-autonomous-rides/ /insights/abu-dhabi-31000-autonomous-rides/ 301
+/ai-will-change-how-organizations-work/ /insights/ai-will-change-how-organizations-work/ 301
+/belonging-isn-t-hr-s-job-it-s-the-ceo-s/ /insights/belonging-isn-t-hr-s-job-it-s-the-ceo-s/ 301
+/enhancing-your-automotive-business-in-a-competitive-market/ /insights/enhancing-your-automotive-business-in-a-competitive-market/ 301
+/gcc-ev-opportunity-fleet-yard-not-showroom/ /insights/gcc-ev-opportunity-fleet-yard-not-showroom/ 301
+/leadership-in-islam-an-ethical-framework-for-modern-leadership/ /insights/leadership-in-islam-an-ethical-framework-for-modern-leadership/ 301
+/maximizing-growth-in-the-mobility-and-automotive-industry/ /insights/maximizing-growth-in-the-mobility-and-automotive-industry/ 301
+/most-strategy-problems-are-actually-people-problems/ /insights/most-strategy-problems-are-actually-people-problems/ 301
+/rethinking-transport-and-mobility-in-a-world-of-complexity/ /insights/rethinking-transport-and-mobility-in-a-world-of-complexity/ 301
+/rethinking-what-alignment-actually-means-in-2026/ /insights/rethinking-what-alignment-actually-means-in-2026/ 301
+/ride-hailing-gcc-green-problem/ /insights/ride-hailing-gcc-green-problem/ 301
+/shifting-gears-embracing-challenges-and-opportunities-in-mobility/ /insights/shifting-gears-embracing-challenges-and-opportunities-in-mobility/ 301
+/still-running-a-2010-playbook-your-customers-have-already-left/ /insights/still-running-a-2010-playbook-your-customers-have-already-left/ 301
+/talent-isnt-enough-why-the-right-people-matter-more/ /insights/talent-isnt-enough-why-the-right-people-matter-more/ 301
+/top-strategies-for-sustainable-growth-in-the-automotive-sector/ /insights/top-strategies-for-sustainable-growth-in-the-automotive-sector/ 301
+/what-saadi-teaches-leaders-about-legacy/ /insights/what-saadi-teaches-leaders-about-legacy/ 301
+/what-the-car-rental-business-taught-me-that-business-school-didn-t/ /insights/what-the-car-rental-business-taught-me-that-business-school-didn-t/ 301
+/why-smart-leaders-keep-making-the-same-strategy-mistake/ /insights/why-smart-leaders-keep-making-the-same-strategy-mistake/ 301
+/why-the-right-hire-matters-more-than-any-strategy/ /insights/why-the-right-hire-matters-more-than-any-strategy/ 301
