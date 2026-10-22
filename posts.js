@@ -1,5 +1,128 @@
 export const POSTS = [
  {
+  "title": "The GCC’s EV Opportunity Is Being Won or Lost in the Fleet Yard — Not the Showroom",
+  "date": "22 October 2026",
+  "tag": "Mobility & Transport",
+  "href": "/insights/gcc-ev-opportunity-fleet-yard-not-showroom/",
+  "summary": "Why fleet operators — not individual consumers — are where the real electrification battle will be decided",
+  "standfirst": "Why fleet operators — not individual consumers — are where the real electrification battle will be decided",
+  "blocks": [
+    {
+      "t": "p",
+      "text": "Every week, a new headline announces the GCC’s progress on electric vehicles. The UAE ranks 22nd globally in EV readiness. The GCC EV market is projected to grow from $11.6 billion in 2026 to $31.6 billion by 2031. Charging infrastructure is expanding. Chinese brands are flooding the market with competitive price points. Governments across the region have set ambitious sustainability targets."
+    },
+    {
+      "t": "p",
+      "text": "And yet, if you walk into the yard of almost any major fleet operator in the GCC today, you will find row upon row of internal combustion engine vehicles — largely unchanged from five years ago."
+    },
+    {
+      "t": "p",
+      "text": "This is not a coincidence. It is a decision. And in many cases, it is the wrong one."
+    },
+    {
+      "t": "h",
+      "text": "Where EVs Actually Get Adopted at Scale"
+    },
+    {
+      "t": "p",
+      "text": "There is a structural truth about EV adoption that gets lost in the consumer narrative: the fastest, most durable transitions to electric vehicles in every market that has successfully made them happen at fleet level first."
+    },
+    {
+      "t": "p",
+      "text": "The reason is straightforward. Fleet operators can capture the economics of electrification in ways that individual consumers cannot. Centralised charging eliminates range anxiety. Predictable routes and utilisation patterns make energy cost modelling reliable. Maintenance savings — EVs have significantly fewer moving parts than ICE vehicles — compound meaningfully across hundreds or thousands of units. And at scale, the total cost of ownership argument for EVs becomes not just competitive but compelling."
+    },
+    {
+      "t": "p",
+      "text": "In markets like Norway, the UK, and increasingly China, corporate and rental fleets were the proving ground. They absorbed early adoption risk, built operational knowledge, and created the secondary market infrastructure — used EV pricing, battery health assessment, residual value frameworks — that eventually gave individual consumers the confidence to follow."
+    },
+    {
+      "t": "p",
+      "text": "The GCC has not yet had that proving ground moment. And the longer fleet operators wait to create it, the further behind they fall."
+    },
+    {
+      "t": "h",
+      "text": "Why GCC Fleet Operators Are Moving Too Slowly"
+    },
+    {
+      "t": "p",
+      "text": "I spent years managing large-scale fleet operations across the GCC. The conversations I had about electrification were consistent, and the hesitation was almost always rooted in three concerns."
+    },
+    {
+      "t": "p",
+      "text": "The first was residual value uncertainty. Fleet economics depend on knowing what a vehicle is worth at the end of its cycle — typically three to four years for rental and leasing operations. With EV technology evolving rapidly and battery degradation still not fully understood in GCC climate conditions, residual value models for electric vehicles carry a degree of uncertainty that makes finance teams uncomfortable. The business case is harder to close when the exit number is a range rather than a figure."
+    },
+    {
+      "t": "p",
+      "text": "The second was charging infrastructure. While public charging networks in Dubai and Abu Dhabi are expanding, the reality for fleet operators is that destination charging — at airports, hotels, commercial districts — remains inconsistent. For rental fleets in particular, where vehicles return with unknown charge states and turnaround times are measured in hours, the operational complexity of managing mixed EV-ICE fleets is a genuine challenge that requires investment in depot infrastructure and process redesign."
+    },
+    {
+      "t": "p",
+      "text": "The third was organisational inertia. Fleet management is a deeply process-driven discipline. Procurement cycles, maintenance contracts, driver training, and fuel management systems are all built around ICE assumptions. Introducing EVs at scale is not simply a procurement decision — it requires rebuilding operational infrastructure from the ground up. In large organisations, that kind of cross-functional change requires leadership commitment that has not always been present."
+    },
+    {
+      "t": "p",
+      "text": "Each of these concerns is legitimate. None of them is a reason to wait."
+    },
+    {
+      "t": "h",
+      "text": "The Cost of Waiting Is Rising"
+    },
+    {
+      "t": "p",
+      "text": "The strategic calculus is shifting in ways that make delayed fleet electrification increasingly expensive."
+    },
+    {
+      "t": "p",
+      "text": "Chinese manufacturers — BYD, Jetour, Chery and others — have entered the GCC market with electric and hybrid vehicles at price points that are restructuring the cost conversation. When BYD’s fleet pricing undercuts an equivalent ICE vehicle on total cost of ownership over a three-year cycle, the residual value argument begins to look less like a barrier and more like an excuse."
+    },
+    {
+      "t": "p",
+      "text": "Simultaneously, GCC governments are beginning to make their sustainability expectations explicit. The UAE’s Net Zero by 2050 target, Saudi Arabia’s Vision 2030 sustainability commitments, and Dubai’s Clean Energy Strategy are moving from aspirational documents to regulatory frameworks. Fleet operators who have not begun building EV capability today will face a compressed transition window when policy mandates arrive — and scrambling to electrify under regulatory pressure is considerably more expensive than doing so on your own timeline."
+    },
+    {
+      "t": "p",
+      "text": "There is also a talent and reputation dimension. The organisations that are attracting the best mobility and logistics talent in 2026 are the ones that can credibly articulate a future-facing strategy. A fleet operation that cannot explain its electrification roadmap is increasingly seen — by investors, by partners, and by the people it is trying to recruit — as a business running out of runway."
+    },
+    {
+      "t": "h",
+      "text": "What Getting It Right Actually Looks Like"
+    },
+    {
+      "t": "p",
+      "text": "Fleet electrification does not require a sudden, wholesale transition. The operators I have seen approach this most effectively do it in stages, with clear commercial logic at each step."
+    },
+    {
+      "t": "p",
+      "text": "The starting point is typically urban short-cycle vehicles — units that operate on predictable routes, return to depot daily, and have lower utilisation intensity. These vehicles are the easiest to electrify, carry the least residual value risk, and generate the operational learning that makes the next phase easier."
+    },
+    {
+      "t": "p",
+      "text": "The second stage involves building the data infrastructure — tracking energy costs, monitoring battery performance in GCC heat conditions, and developing the residual value models that will eventually give finance teams the confidence to approve larger commitments."
+    },
+    {
+      "t": "p",
+      "text": "The third stage is supplier and infrastructure partnership. The fleet operators who will move fastest are the ones building relationships now — with OEMs, with charging infrastructure providers, with insurers developing EV-specific products — rather than waiting until the transition is unavoidable and negotiating leverage has diminished."
+    },
+    {
+      "t": "p",
+      "text": "None of this is revolutionary. What it requires is a leadership team willing to make electrification a strategic priority rather than a compliance exercise — and to start now, when the pressure is still optional, rather than later, when it will not be."
+    },
+    {
+      "t": "h",
+      "text": "A Final Thought"
+    },
+    {
+      "t": "p",
+      "text": "The GCC’s EV story will not be written in the showroom. It will be written in the decisions that fleet directors, CFOs, and mobility investors make over the next eighteen to thirty-six months — about procurement cycles, infrastructure investment, and how much organisational discomfort they are willing to absorb in exchange for a meaningfully stronger competitive position."
+    },
+    {
+      "t": "p",
+      "text": "The opportunity is real and the window is open. But windows close. And in my experience, the organisations that treat the early stages of a major transition as optional rarely enjoy the options available to the ones that didn’t."
+    }
+  ],
+  "image": "blog/mobility.webp"
+},
+ {
   "title": "Why the Right Hire Matters More Than Any Strategy",
   "date": "18 June 2026",
   "tag": "People & Talent",
