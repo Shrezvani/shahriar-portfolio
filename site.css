@@ -176,3 +176,7 @@ section[id], article[id], p[id] { scroll-margin-top: 96px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Columbia campus photograph retained as a compact closing banner. */
+.columbia-banner { margin: 0; height: clamp(180px, 20vw, 280px); overflow: hidden; }
+.columbia-banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 62%; filter: grayscale(1) contrast(1.08); }
