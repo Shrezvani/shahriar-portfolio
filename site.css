@@ -86,6 +86,7 @@ section[id], article[id], p[id] { scroll-margin-top: 96px; }
 .site-footer > div { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding-block: 24px; color: var(--color-neutral-700); font-size: 12px; }
 .site-footer a, .site-footer button { min-height: 44px; display: inline-flex !important; align-items: center; }
 .site-footer a { text-decoration: underline; }
+.detail-page .site-brand { color: var(--color-text); }
 .detail-intro { padding-block: 48px 0; }
 .detail-intro h1 { font-size: clamp(36px,5vw,70px); max-width: 18ch; margin: 24px 0; text-transform: uppercase; }
 .detail-intro p { font-size: 20px; max-width: 65ch; }
@@ -153,8 +154,8 @@ section[id], article[id], p[id] { scroll-margin-top: 96px; }
   .engagement-grid article, .engagement-grid article:first-child, .engagement-grid article:last-child { padding: 24px 0; border-left: 0; }
   .engagement-grid article + article { border-top: 1px solid var(--color-divider); }
   .contact-section { margin-top: 40px; padding-block: 36px; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-section h2 { font-size: 40px; }
+  .contact-grid { grid-template-columns: minmax(0,1fr); }
+  .contact-section h2 { font-size: clamp(34px,10.6vw,40px); }
   .contact-links strong { font-size: 17px; }
   .site-footer > div { gap: 8px 20px; }
   .site-footer > div > span:first-child { width: 100%; }

@@ -37,6 +37,10 @@
   });
   window.addEventListener("hashchange", () => close());
   window.matchMedia("(min-width: 721px)").addEventListener("change", event => {
-    if (event.matches) close(menu.contains(document.activeElement));
+    if (event.matches) {
+      const focusWasInside = menu.contains(document.activeElement);
+      close();
+      if (focusWasInside) document.querySelector(".site-brand").focus();
+    }
   });
 })();
